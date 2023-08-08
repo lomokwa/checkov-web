@@ -10,5 +10,5 @@ export default function Login() {
                 Need an Account? <Link to="/signup" className="text-sky-300">Sign Up Here</Link>
             </p>
         </main>
-    )
-}
+    );
+};

@@ -2,7 +2,7 @@ import { useEffect, useContext } from "react";
 import { AuthContext } from "../App";
 import { TodoListItem } from "./TodoListItem";
 
-export default function TodoList({ todoItems, setTodoItems }) {
+export default function  TodoList({ todoItems, setTodoItems }) {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {

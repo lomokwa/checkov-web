@@ -28,7 +28,7 @@ export default function LoginForm() {
       navigate("/");
     })
     .catch(err => alert(err.message))
-  }
+  };
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -41,7 +41,7 @@ export default function LoginForm() {
         navigate("/");
       })
       .catch(err => alert(err.message))
-  }
+  };
 
   return(
     <section className="bg-rose-900 p-6 rounded-lg max-w-[420px] w-full mx-auto">
@@ -58,5 +58,5 @@ export default function LoginForm() {
       </form>
       <button onClick={handleGoogle} className="w-full bg-cyan-400 text-gray-900 py-2 px-8 rounded-lg shadow-lg transition duration-300 hover:bg-cyan-500 hover:shadow-sm cursor-pointer">Login With Google</button>
     </section>
-  )
-}
+  );
+};

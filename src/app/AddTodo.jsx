@@ -8,7 +8,7 @@ export default function AddTodo({ setTodoItems }) {
   const addNewItem = (e) => {
     e.preventDefault();
     if(!e.target.todo.value) return
-    const newTodoItem = {
+    const newTodoItem = {                     
       uid: user.uid,
       title: e.target.todo.value,
     }
