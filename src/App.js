@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route path="/login" element={ <Login /> }/>
           <Route path="/signup" element={ <SignUp /> }/>
-          <Route path="/" element={user ? <Todo /> : <Login /> }/>
+          <Route path="/" element={user ? <Todo user={user}/> : <Login /> }/>
         </Routes>
       </BrowserRouter>
     </AuthContext.Provider>

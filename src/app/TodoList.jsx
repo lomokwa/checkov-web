@@ -24,7 +24,7 @@ export default function  TodoList({ todoItems, setTodoItems }) {
     <section className="container flex flex-col items-center justify-center w-full mx-auto bg-rose-900 rounded-lg shadow mt-4">
       <ul className="flex flex-col divide-y divide w-full">
         {todoItems.map(item => (
-          <TodoListItem key={item.id} item={item}/>
+          <TodoListItem key={item.id} item={item} setTodoItems={setTodoItems}/>
         ))}
       </ul>
     </section>

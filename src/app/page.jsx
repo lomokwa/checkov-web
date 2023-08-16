@@ -4,13 +4,13 @@ import { useState } from "react";
 
 
 
-export default function Todo() {
+export default function Todo({ user }) {
   const [todoItems, setTodoItems] = useState();
   return(
     <main className="bg-rose-800 min-h-screen text-gray-50 px-4 py-8 text-center">
       <h1 className="text-3xl font-semibold mb-4 text-amber-400">Checkov Todo List</h1>
       <AddTodo setTodoItems={setTodoItems}/>
-      <TodoList todoItems={todoItems} setTodoItems={setTodoItems}/>
+      <TodoList todoItems={todoItems} setTodoItems={setTodoItems} user={user}/>
     </main>
   )
   
